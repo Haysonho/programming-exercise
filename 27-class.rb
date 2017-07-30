@@ -1,4 +1,9 @@
 class Person
+  attr_accessor :first_name, :last_name
+
+  def greet
+    puts "Hello, #{first_name} #{last_name}"
+  end
   # ...
 end
 
@@ -11,6 +16,3 @@ p2 = Person.new
 p2.first_name = "William"
 p2.last_name = "Zhang"
 p2.greet # 输出 "Hello, William Zhang"
-
-
-
